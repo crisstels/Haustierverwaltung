@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ZooTiere;
+
+Goldfisch goldfisch = new Goldfisch("Günther");
+Guppy guppy = new Guppy("Karl");
+
+guppy.schwimmen();
+guppy.Pflegen();
+goldfisch.schwimmen();
+goldfisch.Pflegen();
