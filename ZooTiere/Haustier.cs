@@ -8,5 +8,6 @@
         // Early-Binding, nur Prototyp
         public abstract void Pflegen();
 
+
     }
 }
