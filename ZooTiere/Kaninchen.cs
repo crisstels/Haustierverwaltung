@@ -6,16 +6,22 @@ using System.Threading.Tasks;
 
 namespace ZooTiere
 {
-    public class Kaninchen : Saeuger
+    public class Kaninchen : Saeuger, IPflanzenfresser
     {
 
-        public Kaninchen(string name)
+        public Kaninchen(string name, string besitzer)
         {
             _Name = name;
+            _Besitzer = besitzer;
         }
         public override void fortbewegen()
         {
             Hoppeln();
+        }
+
+        public void Fressen(string nahrung)
+        {
+            Console.WriteLine($"Das Kaninchen {Name} frisst {nahrung}");
         }
 
         public override void Pflegen()

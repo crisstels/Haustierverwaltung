@@ -8,7 +8,11 @@ namespace ZooTiere
 {
     public class Goldfisch : Fisch, IStreichelbar
     {
-        public Goldfisch(string name) { _Name = name; }
+        public Goldfisch(string name, string besitzer)
+        {
+            _Name = name;
+            _Besitzer = besitzer;
+        }
         public override void schwimmen()
         {
             Console.WriteLine($"Der Goldfisch {Name} schwimmt im Kreis");
